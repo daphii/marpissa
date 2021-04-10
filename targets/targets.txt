@@ -1,0 +1,7 @@
+use '>' to indicate a page name
+use '=' to indicate its target url
+
+
+>chocolate data
+=https://content.codecademy.com/courses/beautifulsoup/cacao/index.html
+
