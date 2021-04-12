@@ -73,7 +73,7 @@ def greet():
 target_dict = {}
 def read_targets():
 
-    with open('targets/targets.txt') as targets:
+    with open('ingest/ingest.txt') as targets:
 
         lines = targets.readlines()
         names = [line[1:-1] for line in lines if line[0] == '>']
@@ -145,8 +145,8 @@ while play:
             clear()
             greet()
             print('> Lets fix that\n')
-            os.system('start targets/targets.txt')
-            user = input('> I opened the target file for you. \n> Ready to try again? ready/cancel - ')
+            os.system('start ingest/ingest.txt')
+            user = input('> I opened the ingest file for you. \n> Ready to try again? ready/cancel - ')
 
         if user == 'cancel':
             print("\n> I'll be here when you are ready!")
@@ -178,6 +178,7 @@ while play:
         print('Here we go!\n')
         for target in target_dict.values():
             target.get()
+            time.sleep(1)
         print('> All done! :D\n')
         menu_code = 4
 

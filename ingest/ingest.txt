@@ -1,0 +1,6 @@
+use '>' to indicate a page name
+use '=' to indicate its target url
+
+>York Mills
+=http://www.ttc.ca/Subway/Stations/York_Mills/station.jsp
+
